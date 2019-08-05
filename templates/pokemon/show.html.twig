@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ pokemon.name }}
+{% endblock %}
+
+{% block pageTitle %}
+    <div class="border-bottom border-white rounded py-2 mt-2 mb-3 bg-white text-dark">
+        <h1 class="pokename text-center mt-2">{{ pokemon.number }} {{ pokemon.name }}</h1>
+    </div>
+{% endblock %}
+
+{% block body %}
+{# {{ dump(pokemon) }} #}
+
+<section class="d-flex container border rounded bg-light text-dark px-4 py-4">
+
+    <div>
+        <img src="{{ asset('images/' ~ pokemon.image) }}" alt="{{ pokemon.name }}">
+    </div>
+
+    <div class="my-auto ml-5">
+
+        <a class="{{ pokemon.type }} rounded font-weight-bold text-uppercase text-white border-none px-3 py-2">
+            {{ pokemon.type }}
+        </a>
+
+        <p class="mt-4">
+            "{{ pokemon.description }}"
+        </p>
+
+        <audio controls>
+            <source src="{{ asset('sounds/' ~ pokemon.cry) }}" type="audio/ogg">
+        </audio>
+    <div>
+
+</section>
+
+<section class="d-flex justify-content-center container px-4 py-4 mb-4">
+
+    <img class="rounded-circle" src="{{ asset('images/' ~ pokemon.chen_reaction) }}" alt="{{ pokemon.name }}">
+    <p class="text-uppercase my-auto ml-5"> "{{ pokemon.feature }}" </p>
+
+</section>
+
+<a class="d-block text-center" href="{{ path('pokemon_letsgo') }}">
+    <button type="button" class="btn btn-light mt-2">{{ pokemon.name }}, je te choisis !</button>
+</a>
+
+
+<div class="text-center mt-4 pt-4 border-top border-white">
+    <a class="text-white" href="{{ path('pokemon_list') }}">Retour à la liste</a>
+</div>
+
+{% endblock %}

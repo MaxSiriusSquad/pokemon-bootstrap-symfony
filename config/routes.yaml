@@ -1,0 +1,34 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+# doc requirement: https://symfony.com/doc/current/routing/requirements.html
+
+# POKEMONCONTROLLER
+
+    # Route pour afficher la page d'accueil
+pokemon_list: # ici le nom de la route
+    path: / # l'url de la route
+    controller: App\Controller\PokemonController::list # la fonction a appeler
+    methods: GET # méthode GET
+
+    # Route pour afficher la page de détail d'un pokemon
+pokemon_show:
+    path: /pokemon/{id}
+    controller: App\Controller\PokemonController::show
+    requirements:
+        id: '\d+' # ici le parametre en d+ est celui que j'ai spécifié dans l'url
+    methods: GET
+
+pokemon_letsgo:
+    path: /letsgo # l'url de la route
+    controller: App\Controller\PokemonController::letsgo # la fonction a appeler
+    methods: GET # méthode GET
+
+# APICONTROLLER
+
+    # Page pour afficher les datas en json
+api_list:
+    path: /api/pokemons
+    controller: App\Controller\ApiController::list
+    methods: GET

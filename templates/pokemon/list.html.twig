@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+
+{% block pageTitle %}
+    <div class="border-bottom border-white rounded py-2 mt-2 mb-3 bg-white text-dark">
+        <h1 class="text-center font-weight-bold">Il est temps de choisir ton </h1>
+        <img class="rounded mx-auto d-block mb-4" src="{{ asset('images/pokemon-logo.png') }}" alt="">
+    </div>
+{% endblock %}
+
+{% block body %}
+
+{#
+doc officiel symfo : https://symfony.com/doc/current/templating.html
+{{ ... }}
+"Says something": prints a variable or the result of an expression to the template.
+{% ... %}
+"Does something": a tag that controls the logic of the template; it is used to execute statements such as for-loops for example.
+# ... #
+"Comment something": it's the equivalent of the PHP /* comment */ syntax. It's used to add single or multi-line comments. The content of the comments isn't included in the rendered pages.
+
+ | ex |upper => applique un filtre = modificateur de données
+ -->
+#}
+
+    <div>
+        <img class="rounded mx-auto d-block" src="{{ asset('images/prof-chen.jpeg') }}" alt="">
+    </div>
+
+    <div class="text-center container my-4">
+        <p>"Bonjour et bienvenue dans le monde magique des Pokemon !</p>
+        <p>Je suis <strong class="text-uppercase font-weight-bold">le professeur Chen</strong>, l'un des plus célèbres chercheurs dans le monde Pokemon (...) et je suis chargé de remettre aux jeunes dresseurs Pokemon leur premier Pokemon avant leur départ de Bourg Palette !</p>
+        <p>Aujourd'hui, c'est ton tour !<p>
+        <p>Je te propose donc de choisir ton premier Pokemon parmi ces 3 !</p>
+        <p class="text-uppercase">Alors fais le bon choix !"</p>
+    </div>
+
+    <section class="d-flex container">
+
+        {% for key,value in pokemon_list %}
+
+            {# {{ dump(value) }} #}
+
+            {#
+            Pour genrer un lien doc : https://symfony.com/doc/current/templating.html#linking-to-pages
+            #}
+            <a href="{{ path('pokemon_show', { 'id': key } ) }}">
+
+
+                <div>
+                    {#
+                        Pour accéder ) une valeur d'un tableau, 2 choix possibles :
+                        - mavalue['makey']
+                        - mavalue.makey
+                    #}
+                    <img class="w-50 mx-auto d-block my-4" src="{{ asset('images/' ~ value.pokeball) }}" alt="">
+                </div>
+
+                {#
+                Pour linker des ressources présente dans le dossier "public" (assets)
+                doc : https://symfony.com/doc/current/templating.html#linking-to-assets
+                #}
+
+            </a>
+
+            <br>
+
+        {% endfor %}
+
+    </section>
+
+
+{% endblock %}

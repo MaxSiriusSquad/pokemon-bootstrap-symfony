@@ -1,0 +1,23 @@
+.plante {
+    background-color:green;
+}
+
+.feu {
+    background-color:orange;
+}
+
+.eau {
+    background-color:blue;
+}
+
+.electrik {
+    background-color:rgba(167, 167, 16, 0.815);
+}
+
+body {
+    font-family: 'Signika', Arial, sans-serif;
+}
+
+.pokename {
+    font-family: 'Press Start 2P', Arial, cursive;
+}
