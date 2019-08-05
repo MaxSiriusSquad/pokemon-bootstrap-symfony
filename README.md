@@ -19,3 +19,8 @@ Je vous laisse donc regarder, si vous le souhaitez, comment j'ai créé cette ap
 Peut-être que je retournerai dessus plus tard pour l'améliorer !
 
 Cela dit je suis assez content du résultat pour l'instant (même si l'inté en Bootstrap est assez simpliste), j'ai envie de dire que cette application est réservée aux enfants et c'est pas mal pour un débutant ! :muscle:
+
+![Screenshot](../../public/files/resultat-accueil.png)
+![Screenshot](../../public/files/resultat-salameche.png.png)
+![Screenshot](../../public/files/resultat-pikachu.png)
+![Screenshot](../../public/files/resultat-choix.png)
