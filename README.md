@@ -20,7 +20,9 @@ Peut-être que je retournerai dessus plus tard pour l'améliorer !
 
 Cela dit je suis assez content du résultat pour l'instant (même si l'inté en Bootstrap est assez simpliste), j'ai envie de dire que cette application est réservée aux enfants et c'est pas mal pour un débutant ! :muscle:
 
-![alt tag](https://github.com/MaxSiriusSquad/pokemon-bootstrap-symfony/blob/app/public/files/resultat-accueil.pdf)
-![alt tag](https://github.com/MaxSiriusSquad/pokemon-bootstrap-symfony/blob/app/public/files/resultat-salameche.pdf)
-![alt tag](https://github.com/MaxSiriusSquad/pokemon-bootstrap-symfony/blob/app/public/files/resultat-pikachu.pdf)
-![alt tag](https://github.com/MaxSiriusSquad/pokemon-bootstrap-symfony/blob/app/public/files/resultat-choix.pdf)
+Aperçus de mon application :
+
+- https://github.com/MaxSiriusSquad/pokemon-bootstrap-symfony/blob/app/public/files/resultat-accueil.pdf
+- https://github.com/MaxSiriusSquad/pokemon-bootstrap-symfony/blob/app/public/files/resultat-salameche.pdf
+- https://github.com/MaxSiriusSquad/pokemon-bootstrap-symfony/blob/app/public/files/resultat-pikachu.pdf
+- https://github.com/MaxSiriusSquad/pokemon-bootstrap-symfony/blob/app/public/files/resultat-choix.pdf
